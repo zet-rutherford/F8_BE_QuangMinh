@@ -1,0 +1,12 @@
+{
+  "name": "day14",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "start": "nodemon  --inspect src/server.js"
+  }
+}

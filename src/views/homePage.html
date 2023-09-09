@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/homePage.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container reset">
+        <form action="/verify" method="post">
+            <div class="wrapper">
+                <label for="phoneNumber">Enter Phone Number:</label>
+                <div class="form-wrapper">
+                    <input type="text" id="phoneNumber" name="phoneNumber">
+
+                    <button type="submit">Submit</button>
+                </div>
+                <span class="error">{error.phoneNumber}</span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../public/assets/css/verifyPage.css">
+
+    <title>Verify OTP</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="otpForm" action="/verify-otp" method="post">
+            <div class="label">
+                OTP has been sent to
+                <span>{phoneNumber}</span>
+            </div>
+            <div class="form-container">
+                <input id="otp1" class="otp-input" type="text" maxlength="1">
+                <input id="otp2" class="otp-input" type="text" maxlength="1">
+                <input id="otp3" class="otp-input" type="text" maxlength="1">
+                <input id="otp4" class="otp-input" type="text" maxlength="1">
+            </div>
+
+
+            <div class="button-action">
+                <button class="button button-submit" type="submit"> Submit</button>
+                <!-- back to home -->
+                <button class="button button-back">
+                    <a href="/" style="text-decoration: none; color: #fff;">
+                        Back to Home
+                    </a>
+                </button>
+            </div>
+            <p style="margin-top: 15px;" class="error" id="errorText">{error.otp}</p>
+
+            <input type="hidden" id="otpInput" name="otp" value="">
+        </form>
+
+        <script src="../../public//assets/js/verifyPage.js"></script>
+    </div>
+</body>
+
+</html>
