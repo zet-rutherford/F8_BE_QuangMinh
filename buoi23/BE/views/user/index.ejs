@@ -1,0 +1,21 @@
+<h1>Danh sasch khashc hangf</h1>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th width="5%">STT</th>
+      <th>Email</th>
+      <th>Pass ma hoa</th>
+      <th width="10%">Trang thai</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% customerList.forEach((customer,index)=>{ %>
+    <tr>
+      <td><%=index+1 %></td>
+      <td><%= user.email%></td>
+      <td><%= user.encrypted_password%></td>
+    </tr>
+
+    <% }) %>
+  </tbody>
+</table>
