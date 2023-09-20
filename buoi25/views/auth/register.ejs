@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài cmn khoản</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="mt-5">
+      <% if (msg?.length) { %>
+        <div class="alert alert-danger text-center"><%= msg %></div>
+        <% } %>
+      <h1>Đăng ký tài khoản</h1>
+    </div>
+    <form class="row g-3" method="post">
+      <div class="col-md-7">
+        <label for="">Tên</label>
+        <input type="name" class="form-control is-valid" name="name" value="" required>
+        
+      </div>
+
+
+      <div class="col-md-7">
+        <label for="" >Email</label>
+        <input type="email" class="form-control is-invalid" name="email"  required>
+        
+      </div>
+
+      <div class="col-md-7">
+        <label for="" >Password</label>
+        <input type="password" class="form-control is-invalid"  name="password" required>
+        
+        
+      </div>
+      <div class="col-md-7">
+        <label for="" >Con phơm Password</label>
+        <input type="password" class="form-control is-invalid"  name="password2" required>
+        
+      <div class="row">
+        <div class="col-6 pt-3 d-grid">
+          <button class="btn btn-primary" type="submit">Đăng ký</button>
+        </div>
+        <div class="col-6 pt-3 d-grid">
+          <a href="auth/login" type="button" class="btn btn-outline-primary">Về trang chủ</a>
+        </div>
+      </div>
+
+      
+    </form>
+
+    
+</body>
+</html>
