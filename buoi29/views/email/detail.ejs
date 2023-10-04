@@ -1,0 +1,28 @@
+
+<div class="col-6">
+    <h1>Nội dung</h1>
+
+    <div class="mt-3">
+        <h4>Người nhận</h4>
+        <span><%= emailReciver %>  </span>
+    </div>
+    
+
+    <div class="mt-3">
+        <h4>Tiêu đề</h4>
+        <span><%= emailTitle %> </span>
+    </div>
+    
+    <div class="mt-3">
+        <h4>Trạng thái</h4>
+        <span><%= emailStatus === 1 ? "Đã xem" : "Chưa xem" %> </span>
+    </div>
+
+    <div class="mt-3 mb-3">
+        <h4>Nội dung</h4>
+        <span><%= emailContent %> </span>
+    </div>
+
+    <a href="http://localhost:3000/email/history" class="btn btn-primary">Quay về lịch sử</a>
+    
+</div>

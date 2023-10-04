@@ -1,0 +1,26 @@
+<h1>Lịch sử</h1>
+<table class="table table-bordered">
+    <thead>
+        <th>STT</th>
+        <th>Người nhận</th>
+        <th>Tiêu đề</th>
+        <th>Trạng thái</th>
+        <th>Thời gian</th>
+        <th>Nội dung</th>
+    </thead>
+    <tbody>
+        <% emailList.forEach((email,index)=>{ %>
+            <tr>
+                <td><%= index+1 %></td>
+                <td><%= email.email %></td>
+                <td><%= email.title %></td>
+                <td><%= email.status === 1 ? 'Đã xem' : 'Chưa xem' %></td>
+                <td><%= email.createdAt %></td>
+                <td>
+                    <a href="./detail/<%= email.id %>" class="btn btn-info">Nội dung</a>
+                </td>
+                
+            </tr>
+            <% }) %>
+    </tbody>
+</table>
